@@ -17,27 +17,6 @@ html {
   line-height: 1.4;
 }
 
-body{
-  font-family: 'Montserrat Alternates', sans-serif;
-  color: #031926;
-  display: flex;
-}
-
-
-
-/*****GRID*****/
-.full-width {
-  width:90%;
-  margin: 0 auto;
-}
-
-.half-width {
-  width:45%;
-}
-
-.third-width {
-  width: 22.5%;
-}
 
 
 /*
@@ -120,30 +99,65 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/*****HEADER*****/
-   header {
-     background:url('../img/header-img.jpg');
-     background-size: cover;
+   /*General Styles*/
+
+   body {
+     font-family: 'Montserrat Alternates', sans-serif;
+     color: #031926;
+   }
+
+   ul,
+   ol {
+     list-style:none;
+   }
+
+   h1 {
+     font-size: 3em;
+   }
+
+   h2 {
+     font-size: 2.8em;
+   }
+
+   h3{
+     font-size: 1.2em;
+   }
+
+   p {
+     font-size: 1.1em;
+   }
+
+   img {
+     width: 100%;
+   }
+
+   .full-width {
+     width:90%;
+   }
+
+   /* Header styles */
+   .hero-area {
      display:flex;
      justify-content: center;
-     align-items: center;
-     height: 800px;
+     flex-flow: row wrap;
+     background: url(../img/header-img.jpg) no-repeat center;
+     background-size: cover;
+     min-height: 640px;
    }
 
-   header h1 {
+   .hero-area h1 {
      color: #77aca2;
-     font-size: 60px;
-     text-align: center;
-     margin: 0px;
-     padding-top: 150px;
+     display: flex;
+     justify-content: center;
+     flex-flow: row wrap;
      font-weight: bold;
+     margin-bottom: 0;
+     margin-left: 20px;
    }
 
-   header h2 {
-     font-size: 48px;
-     text-align: center;
-     line-height: 100px;
-     padding-top: 50px;
+   .hero-area h2 {
+     margin-top: 0;
+     margin-left: 20px;
    }
 
    header h2 span {
@@ -152,124 +166,115 @@ textarea {
      color: #77aca2;
    }
 
-   /*****WORK*****/
-   #work .full-width{
-     padding: 20px 0px;
-     display:flex;
+   /* Work styles */
+   .work .content-wrapper {
+     display: flex;
      justify-content: center;
      align-items: center;
+     flex-flow: row wrap;
    }
 
-   #work h2 {
-     font-size: 4em;
-     text-align: center;
-   }
-
-   #work img{
-     float:left;
-     width: 550px;
-     margin: 20px;
-     border: 0.083em solid #031926;
-   }
-
-   #work h3 {
-     font-size: 2em;
-     font-weight: bold;
-     margin-top: 20px;
-   }
-
-   #work h3 a {
+   .work h3 a {
      text-decoration: none;
      color: #031926;
      font-weight: bold;
    }
 
-   #work p {
-     font-size: 1.5em;
-     margin-bottom: 148px;
+   .work-desc h3, .work-desc p {
+     margin: 15px;
    }
 
-   /*****ABOUT*****/
-   #about .full-width {
-     padding: 20px 0px;
+   .work-desc img {
+     border-top: .02em solid #031926;
+     border-bottom: .02em solid #031926;
    }
-   #about {
+
+   /* About */
+   .about .content-wrapper {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+   }
+
+   .about {
      background-color: #468189;
      margin: 0px;
    }
 
-   #about h2{
-     font-size: 4em;
-     text-align: center;
+   .about-desc p {
+     margin:15px;
    }
 
-   #about img{
-     width: 350px;
-     margin-top: 50px;
-     margin-bottom: 0px;
-   }
-
-   #about p {
-     font-size: 1.5em;
-     text-align: justify;
-     margin-top: 50px;
-   }
-
-   #about ul {
-     font-size: 1.5em;
+   .about ul {
      list-style-type:circle;
      margin-bottom: 50px;
+     font-size: 1.1em;
    }
 
-   /*****CONTACT*****/
-   #contact .full-width {
-     padding: 20px 0px;
-     display:flex;
+
+   /* Contact */
+   .contact {
+     background-color: #9dbebb;
+     margin: 0px;
+     padding-top: 20px;
+   }
+
+   .contact h2 {
+     display: flex;
+     justify-content: center;
+   }
+   .contact h3{
+     font-size: 1.8em;
+   }
+
+   .contact-phone h3 {
+     display: flex;
+     justify-content: center;
+   }
+
+   .contact-phone p {
+     display: flex;
      justify-content: center;
      align-items: center;
    }
 
-   #contact {
-     background-color: #9dbebb;
-     margin: 0px;
+   .contact-web h3{
+     display: flex;
+     justify-content: center;
+     align-items: center;
    }
 
-   #contact h2 {
-     font-size: 4em;
-     text-align: center;
+   .contact-web ul{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 40px;
    }
 
-   #contact h3 {
-     font-size: 2.333em;
-     font-weight: bolder;
-     text-align: center;
+   .contact-web li {
+     width: 20%;
    }
 
-   #contact p {
-     font-size: 1.66em;
-     text-align: center;
+   .contact-address h3 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+     margin-bottom: 5px;
    }
 
-   #contact ul {
-     list-style-type: none;
-     font-size: 1.66em;
-     text-align: center;
+   .contact-address p {
+     margin-bottom: 0px;
+     display: flex;
+     justify-content: center;
    }
 
-   #contact p a {
+   .contact p a {
      text-decoration: none;
      color: inherit;
    }
 
-   #contact li img {
-     width: 60px;
-     margin: 25px 25px 25px 0px;
-   }
-
-   #contact li {
-     display: inline-block;
-     margin-left: 0px;
-   }
 
 /* ==========================================================================
    Helper classes
@@ -361,12 +366,80 @@ textarea {
    ========================================================================== */
 
   /* Style adjustments for viewports that meet the condition */
-  @media only screen and (min-width: 1200px) {
-    .content-wrapper {
-      max-width: 960px;
-    }
+  @media only screen and (min-width: 768px){
+  .content-wrapper {
+    width: 100%;
+  }
 
+  /* Header */
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .hero-area {
+    background-size: cover;
+
+  }
+
+  .hero-area h1 {
+    margin-bottom: 10px;
+    margin-top:40px;
+    height: 150px;
+  }
+
+  .hero-area h2 {
+    margin: 0 20px 250px 20px;
+  }
+
+  /* Work */
+  .work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .work p {
+    margin:15px 20px;
+  }
+
+  /* About */
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about p {
+    margin: 15px 30px;
+  }
+
+  /* Contact*/
+  .contact{
+    margin: 0;
+  }
+
+  .content-wrapper {
+    margin: 0;
+  }
+
+  .contact h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-phone h3 .contact-phone p{
+    display: flex;
+    flex-flow:row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media only screen and (min-width: 1200px){
+
+  }
 
 }
 
