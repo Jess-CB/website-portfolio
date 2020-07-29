@@ -108,7 +108,12 @@ textarea {
 
    ul,
    ol {
-     list-style:none;
+     list-style-type: none;
+   }
+
+   a {
+     text-decoration: none;
+     color: inherit;
    }
 
    h1 {
@@ -164,6 +169,22 @@ textarea {
      font-family: 'Amatic SC', cursive;
      font-size: 50px;
      color: #77aca2;
+   }
+
+   header nav {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+     width: 60%;
+   }
+
+   header nav ul {
+     display: flex;
+     justify-content: space-around;
+     width: 100%;
+     padding: 0px;
+     text-transform: uppercase;
    }
 
    /* Work styles */
